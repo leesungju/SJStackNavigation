@@ -74,7 +74,7 @@
     touchView.tag = count;
     [self.view addSubview:touchView];
     
-    [UIView animateKeyframesWithDuration:0.3
+    [UIView animateKeyframesWithDuration:(animated?0.3:0)
                                    delay:0
                                  options:UIViewKeyframeAnimationOptionAllowUserInteraction
                               animations:^{
@@ -106,7 +106,7 @@
     }
     [touchView removeFromSuperview];
     touchView = nil;
-    [UIView animateKeyframesWithDuration:0.2
+    [UIView animateKeyframesWithDuration:(animated?0.2:0)
                                    delay:0
                                  options:UIViewKeyframeAnimationOptionAllowUserInteraction
                               animations:^{

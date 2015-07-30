@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SJStackViewController : UIViewController
+@property (nonatomic, assign) BOOL isNotSwipe;
+@property (nonatomic, strong) UIViewController * rootViewController;
 - (UIViewController*)getCurrentViewController;
 - (void)addRootViewController:(UIViewController*)viewController;
 - (void)pushViewController:(UIViewController*)viewController animated:(BOOL)animated;
+- (void)dismissViewControllerAnimated:(BOOL)animated;
 @end
